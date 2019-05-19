@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<html>
+
+    <body>
+      <div id="header">
+        <nav class="navbar navbar-expand-lg">
+            Houston vs Los Angeles
+        </nav>
+      </div>
+
+    <div class = "column">
+        <div>
+            <h3>Los Angeles</h3>
+            <p>
+              Temperature: {{weatherData.LA.main?.temp}} F  , Humidity: {{weatherData.LA.main?.humidity}}%, Pressure: {{weatherData.LA.main?.pressure}} Pa
+            </p>
+        </div>
+    </div>
+
+    <div class = "column">
+          <div>
+              <h3>Houston</h3>
+              <p>
+                Temperature: {{weatherData.HTX.main?.temp}} F , Humidity: {{weatherData.HTX.main?.humidity}}%, Pressure: {{weatherData.HTX.main?.pressure}} Pa
+              </p>
+          </div>
+    </div>
+
+    </body>
+
+  <router-outlet></router-outlet>
+</html>
